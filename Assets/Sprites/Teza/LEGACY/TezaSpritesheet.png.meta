@@ -1,0 +1,1091 @@
+fileFormatVersion: 2
+guid: cf54589020e303c4ea7e349967655317
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TezaSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 267
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1945529eddc80f64193f2f3e90bddae6
+      internalID: -572767020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 267
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98a182ff1423434d99b35f640dbb297
+      internalID: -766259447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 267
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09080019683e2aa4a99e28ca3ba0567f
+      internalID: 1964934599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 229
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da01a8ea986c14646b88f4c5a6fed9ad
+      internalID: -1572838764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 229
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7821a66c49d10b64c80e4f56fc91d178
+      internalID: -1584760564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 229
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e0ddb332fd3bc4cbcbd90a54b5b357
+      internalID: -1005150884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 189
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deb445243063e4489a40e9b8badc5b5
+      internalID: 2013391692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 189
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afdcff47f8a0f34d9a3ed1ccb2ae3d5
+      internalID: -924035260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 189
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4d847356be84843b0d72cf11c71d21
+      internalID: 1984002920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 149
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3048b2db69fcc41a4346dca5a055f1
+      internalID: 371457465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 149
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f721a21b55628d34da8b7c736ef67f8e
+      internalID: 184263809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 149
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbc25538b08beb4cb13e6f995d52197
+      internalID: 160434968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 113
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f80cc6a19794ca478486440d6b58b4d
+      internalID: -1287740013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 113
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901f95a0c21ed9049ac7d39870f54ade
+      internalID: 454439995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 113
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b0498fb31295644b0e7cddd980fe08
+      internalID: -1180067283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 113
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bd39fe9c2ec6c4aaa370712e298efd
+      internalID: 1356346986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 113
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec29e8fa153e95c4daa02c681a460458
+      internalID: -781464705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 113
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f423b47bcb4af4aa216923063d0f7c
+      internalID: -1045113936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 113
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a6d3d87943119488cc9c53358a5276
+      internalID: -1672175750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 113
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942b8b703a28c194ea7125c9ca175d9b
+      internalID: -2076119588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 79
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090c31cac9c2d8346bd4dfcf2bb48e8e
+      internalID: -424592560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 79
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eb1a8ae5f64214f9c7a9c8bb1b1fe4
+      internalID: -1672197765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 79
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddc8ba684bca234e8b24c75217db39c
+      internalID: 1612783554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 79
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fb96c4902bb8842b2315108dd6744e
+      internalID: -1199875564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 79
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517b1651a4066444c8bd2d4a536d9752
+      internalID: 255677506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 79
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01f23f1fdfe7cb4d837310f9794615d
+      internalID: 2012095069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 79
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f24f1a0f089ef4aa03608e13e63b24
+      internalID: -803724331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 79
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e254a855e839946afebddcb4f5f5c3
+      internalID: -776093636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 37
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b185a2fe66ee0f042b1b33c5b54d96f9
+      internalID: 1935049392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 37
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7ad96770460d7468c4043b943dbbc2
+      internalID: 280037918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 37
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428d27fa6cf7e954a97503f7f53b0991
+      internalID: 1969965807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 37
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50aa0f242a5c27149b18d9ceb15bb8fc
+      internalID: 1963086141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 37
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72611c2b0804cc44aee2b1dddce457a
+      internalID: 1379458196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 37
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fb443fed540da4a875bf3b156c14da
+      internalID: 713685441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 37
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3095c4079da52540b7d3d8c8850f31c
+      internalID: -1078133306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 37
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6598d11bf034b784580358d8afd5bc2d
+      internalID: 1438388930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f19152ed6d0a9647a02e1c7e14a511a
+      internalID: 711519886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a994c2d3a20464ba93080e6d051a91
+      internalID: -767032219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977e855e2a4689e4486af3b1de8a0603
+      internalID: -39217730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e2dc2fb1d9e7749b0a5355d7c6f171
+      internalID: 1843927512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b168c6fae67f05b4995f9cd52b208a30
+      internalID: -413884890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d683fc434127a4391c45bcd0702fd1
+      internalID: 7747670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 2
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4bb43ffed268645afff015812a96f8
+      internalID: 452112720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TezaSpritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 2
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2fe0d41be64eb43ab3ef2fc2c2df89
+      internalID: -1755976593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TezaSpritesheet_0: -572767020
+      TezaSpritesheet_1: -766259447
+      TezaSpritesheet_10: 184263809
+      TezaSpritesheet_11: 160434968
+      TezaSpritesheet_12: -1287740013
+      TezaSpritesheet_13: 454439995
+      TezaSpritesheet_14: -1180067283
+      TezaSpritesheet_15: 1356346986
+      TezaSpritesheet_16: -781464705
+      TezaSpritesheet_17: -1045113936
+      TezaSpritesheet_18: -1672175750
+      TezaSpritesheet_19: -2076119588
+      TezaSpritesheet_2: 1964934599
+      TezaSpritesheet_20: -424592560
+      TezaSpritesheet_21: -1672197765
+      TezaSpritesheet_22: 1612783554
+      TezaSpritesheet_23: -1199875564
+      TezaSpritesheet_24: 255677506
+      TezaSpritesheet_25: 2012095069
+      TezaSpritesheet_26: -803724331
+      TezaSpritesheet_27: -776093636
+      TezaSpritesheet_28: 1935049392
+      TezaSpritesheet_29: 280037918
+      TezaSpritesheet_3: -1572838764
+      TezaSpritesheet_30: 1969965807
+      TezaSpritesheet_31: 1963086141
+      TezaSpritesheet_32: 1379458196
+      TezaSpritesheet_33: 713685441
+      TezaSpritesheet_34: -1078133306
+      TezaSpritesheet_35: 1438388930
+      TezaSpritesheet_36: 711519886
+      TezaSpritesheet_37: -767032219
+      TezaSpritesheet_38: -39217730
+      TezaSpritesheet_39: 1843927512
+      TezaSpritesheet_4: -1584760564
+      TezaSpritesheet_40: -413884890
+      TezaSpritesheet_41: 7747670
+      TezaSpritesheet_42: 452112720
+      TezaSpritesheet_43: -1755976593
+      TezaSpritesheet_5: -1005150884
+      TezaSpritesheet_6: 2013391692
+      TezaSpritesheet_7: -924035260
+      TezaSpritesheet_8: 1984002920
+      TezaSpritesheet_9: 371457465
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
