@@ -7,7 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public EnemySpawner spawner;
+    public EnemySpawner[] spawners;
     private int totalSpawnedEnemies = 0;
     [SerializeField] private int totalSpawnLimit = 100;
     
@@ -33,6 +33,13 @@ public class GameManager : MonoBehaviour
         if (totalSpawnedEnemies >= totalSpawnLimit)
         {
             Debug.Log("spawnLimitReached");
+            StopAllSpawners();
+        }
+    }
+    public void StopAllSpawners()
+    {
+        foreach (EnemySpawner spawner in spawners)
+        {
             spawner.StopSpawners();
         }
     }
