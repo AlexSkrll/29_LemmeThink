@@ -26,14 +26,17 @@ public class AnimationManager : MonoBehaviour
    
         float moveX = tezaBody.GetFloat("moveX");
         float moveY = tezaBody.GetFloat("moveY");
-        bool bodyIsMoving = tezaBody.GetBool("isMoving");
+        bool IsMoving = tezaBody.GetBool("isMoving");
         float timeSinceLastMovement = tezaBody.GetFloat("timeSinceLastMovement");
+        bool isAiming = tezaBody.GetBool("isAiming"); 
     
 
         tezaArm.SetFloat("armmoveX", moveX);
         tezaArm.SetFloat("armmoveY", moveY);
-        tezaArm.SetBool("isMoving", bodyIsMoving);
+        tezaArm.SetBool("isMoving", IsMoving);
         tezaArm.SetFloat("timeSinceLastMovement", timeSinceLastMovement);
+        tezaArm.SetBool("isAiming", isAiming);
+        
         
     }
     

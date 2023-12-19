@@ -22,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
             Vector2 randomPos = new Vector2(transform.position.x + Random.Range(-spawnAreaSize.x / 2f, spawnAreaSize.x / 2f),
                                             transform.position.y + Random.Range(-spawnAreaSize.y / 2f, spawnAreaSize.y / 2f));
 
-            GameObject newEnemy = Instantiate(enemyPrefab, randomPos, Quaternion.identity, transform);
+            GameObject enemy = Instantiate(enemyPrefab, randomPos, Quaternion.identity, transform);
             
             GameManager.instance.IncrementTotalSpawnedEnemies();
             currentActiveEnemies++;
