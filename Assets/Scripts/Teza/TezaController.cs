@@ -61,6 +61,7 @@ public class TezaController : MonoBehaviour
 
     //aiming
     [SerializeField] private GameObject crosshair;
+    [SerializeField] private GameObject gunarm;
     private bool isAiming = false;
     private Vector2 lookInput;
     private Vector3 direction;
@@ -85,6 +86,7 @@ public class TezaController : MonoBehaviour
 
         Cursor.visible = false;
         crosshair.SetActive(false);
+        gunarm.SetActive(false);
 
     }
     private void OnEnable()
@@ -115,6 +117,7 @@ public class TezaController : MonoBehaviour
         aim.started += Aim;
         aim.canceled += ctx => isAiming = false;
         aim.canceled += ctx => crosshair.SetActive(false);
+        aim.canceled += ctx => gunarm.SetActive(false);
     }
     private void OnDisable()
     {
@@ -138,17 +141,18 @@ public class TezaController : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateAnimator();
+        DashSliderManager();
         timeSinceLastMovement += Time.fixedDeltaTime;
         if (isAiming)
         {
             AimLogic();
+            GunarmLogic();
             return;
         }
 
         rb.velocity = movementInput * speed * 100; // to * 100 exei na kanei me th klimaka twn sprites (scale*100)
         isMoving = rb.velocity.magnitude > 0.1f;
 
-        DashSliderManager();
         if (isMoving)
         {
             lastMoveDirection = movementInput.normalized;
@@ -274,6 +278,7 @@ public class TezaController : MonoBehaviour
         isMoving = false;
         rb.velocity = Vector2.zero;
         crosshair.SetActive(true);
+        gunarm.SetActive(true);
     }
     private void AimLogic()
     {
@@ -281,6 +286,24 @@ public class TezaController : MonoBehaviour
         crosshairPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.nearClipPlane));
         crosshair.transform.position = crosshairPos;
 
+    }
+    private void GunarmLogic()
+    {
+        Vector2 crosshairPos2D = new Vector2(crosshairPos.x, crosshairPos.y);
+        Vector2 direction = (crosshairPos2D - characterPos).normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        gunarm.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        Debug.Log(angle);
+
+        SpriteRenderer gunarmSprite = gunarm.GetComponent<SpriteRenderer>();
+        if(angle > 90 || angle < -90)
+        {
+            gunarmSprite.flipY = true;
+        }
+        else
+        {
+             gunarmSprite.flipY = false;
+        }
 
     }
     private void Fire(InputAction.CallbackContext context)
