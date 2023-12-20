@@ -134,7 +134,7 @@ public class TezaController : MonoBehaviour
         anim.SetFloat("moveX", lastMoveDirection.x);
         anim.SetFloat("moveY", lastMoveDirection.y);
         anim.SetFloat("timeSinceLastMovement", timeSinceLastMovement);
-        
+
     }
 
     private void FixedUpdate()
@@ -285,48 +285,51 @@ public class TezaController : MonoBehaviour
         Vector2 mousePosition = Mouse.current.position.ReadValue();
         crosshairPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.nearClipPlane));
         crosshair.transform.position = crosshairPos;
-        
+
         //GunArmRotation
-        
+
         characterPos = transform.position;
         Vector2 crosshairPos2D = new Vector2(crosshairPos.x, crosshairPos.y);
         Vector2 direction = (crosshairPos2D - characterPos).normalized;
+
+
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         gunarm.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         Debug.Log(angle);
 
         SpriteRenderer gunarmSprite = gunarm.GetComponent<SpriteRenderer>();
-        if(angle > 90 || angle < -90)
+        if (angle > 90 || angle < -90)
         {
             gunarmSprite.flipY = true;
         }
         else
         {
-             gunarmSprite.flipY = false;
+            gunarmSprite.flipY = false;
         }
 
-        if(angle >0)
+        if (angle > 0)
         {
-            gunarm.transform.localPosition = new Vector3(-4.40999985f,4.52199984f,0.5f);
+            gunarm.transform.localPosition = new Vector3(-4.40999985f, 4.52199984f, 0.5f);
         }
         else
         {
-            gunarm.transform.localPosition = new Vector3(5.58f,4.52199984f,0);
+            gunarm.transform.localPosition = new Vector3(5.58f, 4.52199984f, -1f);
         }
 
         anim.SetFloat("aimAngle", angle);
     }
- 
+
     private void Fire(InputAction.CallbackContext context)
     {
         if (context.performed && isAiming)
         {
             Vector2 crosshairPos2D = new Vector2(crosshairPos.x, crosshairPos.y); //Den mporousa na kanw aferesh Vecto3 me Vector2*
             Vector2 direction = (crosshairPos2D - characterPos).normalized;
-
-            GameObject bullet = Instantiate(bulletPrefab, characterPos, Quaternion.identity);
+            Vector3 bulletStartPosition = gunarm.transform.position;
+            float offset = 1.0f;
+            bulletStartPosition += new Vector3(direction.x * offset, direction.y * offset, 0);
+            GameObject bullet = Instantiate(bulletPrefab, bulletStartPosition, Quaternion.identity);
             bullet.GetComponent<Bullet>().velocity = direction * bulletSpeed * 100;
-
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             bullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
