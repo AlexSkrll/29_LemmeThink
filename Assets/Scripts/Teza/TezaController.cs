@@ -263,11 +263,16 @@ public class TezaController : MonoBehaviour
         Vector2 attackDirection = new Vector2(attackX, attackY).normalized;
         Vector2 attackPointPosition = (Vector2)transform.position + attackDirection * attackOffset;
         attackPoint.position = attackPointPosition;
+        if(attackY == 0)
+        {
+            attackPoint.position = new Vector2(attackPoint.position.x, attackPoint.position.y -10f);
+        }
     }
 
     void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+
     }
 
     private void Aim(InputAction.CallbackContext context)
@@ -295,7 +300,7 @@ public class TezaController : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         gunarm.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         SpriteRenderer gunarmSprite = gunarm.GetComponent<SpriteRenderer>();
         if (angle > 90 || angle < -90)
@@ -315,8 +320,8 @@ public class TezaController : MonoBehaviour
         {
             gunarm.transform.localPosition = new Vector3(5.58f, 4.52199984f, -1f);
         }
+         anim.SetFloat("aimAngle", angle);
 
-        anim.SetFloat("aimAngle", angle);
     }
 
     private void Fire(InputAction.CallbackContext context)

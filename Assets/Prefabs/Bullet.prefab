@@ -99,6 +99,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!96 &4434018729214119282
 TrailRenderer:
   serializedVersion: 2

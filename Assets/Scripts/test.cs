@@ -4,58 +4,17 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    private float x;
-    private float y;
-   private void Test(){
-   if(x>0)
-   {
-    if(y>0)
+    public GameObject teza;
+    private TezaController tezaController;
+    private void Start()
     {
-        if(y>x)
-        {
-            //case1
-        }
-        else
-        {
-            //case2
-        }
+        tezaController = teza.GetComponent<TezaController>();
     }
-    else{
-        if(y>x)
-        {
-            //case3
-        }
-        else
-        {
-            //case4
-        }
-    }
-   }
-   else{
+    void OnDrawGizmosSelected()
     {
-    if(y>0)
-    {
-        if(y>x)
-        {
-            //case5
-        }
-        else
-        {
-            //case6
-        }
-    }
-    else{
-        if(y>x)
-        {
-            //case7
-        }
-        else
-        {
-            //case8
-        }
-    }
-   }
-   }
+        Gizmos.DrawWireSphere(tezaController.attackPoint.position, tezaController.attackRange);
 
-   }
+    }
+
 }
+

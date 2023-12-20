@@ -37,13 +37,13 @@ public class EnemySpawner : MonoBehaviour
     public void StopSpawners()
     {
         isSpawning = false;
-        Debug.Log(isSpawning);
+        //Debug.Log(isSpawning);
     }
 
     public void StartSpawners()
     {
         isSpawning = true;
-        Debug.Log(isSpawning);
+        //Debug.Log(isSpawning);
     }
 
     private void OnDrawGizmosSelected()
