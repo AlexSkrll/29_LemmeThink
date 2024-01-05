@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.InputSystem;
@@ -19,6 +18,7 @@ public class TezaController : MonoBehaviour
     private InputAction aim;
     private InputAction attack;
     private InputAction look;
+    private InputAction block;
 
 
     //movement
@@ -45,13 +45,21 @@ public class TezaController : MonoBehaviour
 
     //UI
     public Slider DashSlider;
-
+    public Slider AttackSlider;
 
     //Attack
     public Transform attackPoint;
     public float attackRange;
     [SerializeField] private float attackOffset;
     public LayerMask enemyLayer;
+    //AttackCounter
+    [SerializeField] int maxAttacks;
+    private float attackCounter;
+    private bool attackExhausted = false;
+    private float attackCooldownTimer;
+    [SerializeField] float attackCooldownDuration;
+    private float timeSinceLastAttack;
+    [SerializeField] private float attackCounterResetTime;
 
 
     //health
@@ -66,12 +74,19 @@ public class TezaController : MonoBehaviour
     private Vector2 lookInput;
     private Vector2 crosshairPos;
     private Vector2 characterPos;
-    //private float aimAngle;
+
+    private float aimAngle;
 
 
     //shooting
     public GameObject bulletPrefab;
     [SerializeField] private float bulletSpeed;
+
+    //block
+    private bool isBlocking;
+    private float blockDuration = 4;
+    private float blockTimer;
+    
 
 
     private void Awake()
@@ -116,6 +131,10 @@ public class TezaController : MonoBehaviour
         aim.canceled += ctx => isAiming = false;
         aim.canceled += ctx => crosshair.SetActive(false);
         aim.canceled += ctx => gunarm.SetActive(false);
+
+        block = input.Player.Block;
+        block.Enable();
+        block.performed += Block;
     }
     private void OnDisable()
     {
@@ -140,7 +159,8 @@ public class TezaController : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateAnimator();
-        DashSliderManager();
+        DashCounterManager();
+        AttackCounterManager();
         timeSinceLastMovement += Time.fixedDeltaTime;
         if (isAiming)
         {
@@ -172,6 +192,18 @@ public class TezaController : MonoBehaviour
             }
         }
 
+        if (isBlocking)
+        {
+
+            Debug.Log(isBlocking);
+            blockTimer += Time.fixedDeltaTime;
+
+            if (blockTimer >= blockDuration)
+            {
+                isBlocking = false;
+            }
+        }
+
     }
 
     private void Dash(InputAction.CallbackContext context)
@@ -187,7 +219,7 @@ public class TezaController : MonoBehaviour
         }
 
     }
-    private void DashSliderManager()
+    private void DashCounterManager()
     {
         if (DashSlider.value == 1)
         {
@@ -227,15 +259,16 @@ public class TezaController : MonoBehaviour
         DashSlider.value = (maxDashes - dashCounter) / maxDashes;
     }
 
+
     private void Attack(InputAction.CallbackContext context)
     {
 
         attackPointPosition();
 
-        if (context.performed)
+        if (context.performed && !attackExhausted)
         {
             //Debug.Log("Attack");
-            anim.SetTrigger("isAttacking");
+            anim.SetTrigger("Attacking");
 
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
@@ -247,9 +280,14 @@ public class TezaController : MonoBehaviour
                 if (enemyHealth != null)
                 {
                     enemyHealth.TakeDamage(1);
+                    break;
                 }
 
             }
+
+            attackCounter++;
+            timeSinceLastAttack = 0;
+            if (attackCounter == maxAttacks) attackExhausted = true;
         }
     }
     private void attackPointPosition()
@@ -263,9 +301,9 @@ public class TezaController : MonoBehaviour
         Vector2 attackDirection = new Vector2(attackX, attackY).normalized;
         Vector2 attackPointPosition = (Vector2)transform.position + attackDirection * attackOffset;
         attackPoint.position = attackPointPosition;
-        if(attackY == 0)
+        if (attackY == 0)
         {
-            attackPoint.position = new Vector2(attackPoint.position.x, attackPoint.position.y -10f);
+            attackPoint.position = new Vector2(attackPoint.position.x, attackPoint.position.y - 10f);
         }
     }
 
@@ -273,6 +311,44 @@ public class TezaController : MonoBehaviour
     {
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
 
+    }
+    private void AttackCounterManager()
+    {
+        if (AttackSlider.value == 1)
+        {
+            if (attackExhausted)
+            {
+                attackCounter = 0;
+                attackCooldownTimer = 0;
+                attackExhausted = false;
+            }
+        }
+        else if (attackCounter >= maxAttacks)
+        {
+            if (attackCooldownTimer >= 0)
+            {
+                attackCooldownTimer -= Time.fixedDeltaTime;
+            }
+        }
+        else if (attackCooldownTimer <= 0)
+        {
+            attackCooldownTimer = attackCooldownDuration;
+        }
+
+        timeSinceLastAttack += Time.fixedDeltaTime;
+
+        if (timeSinceLastAttack >= attackCounterResetTime && attackCounter < maxAttacks && attackCounter > 0)
+        {
+            attackCounter = 0;
+            timeSinceLastAttack = 0;
+        }
+
+        if (attackExhausted)
+        {
+            AttackSlider.value = Math.Min(1 - attackCooldownTimer / attackCooldownDuration, 1f);
+            return;
+        }
+        AttackSlider.value = (maxAttacks - attackCounter) / maxAttacks;
     }
 
     private void Aim(InputAction.CallbackContext context)
@@ -300,7 +376,7 @@ public class TezaController : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         gunarm.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        //Debug.Log(angle);
+        Debug.Log(angle);
 
         SpriteRenderer gunarmSprite = gunarm.GetComponent<SpriteRenderer>();
         if (angle > 90 || angle < -90)
@@ -320,8 +396,8 @@ public class TezaController : MonoBehaviour
         {
             gunarm.transform.localPosition = new Vector3(5.58f, 4.52199984f, -1f);
         }
-         anim.SetFloat("aimAngle", angle);
 
+        anim.SetFloat("aimAngle", angle);
     }
 
     private void Fire(InputAction.CallbackContext context)
@@ -341,14 +417,27 @@ public class TezaController : MonoBehaviour
             Destroy(bullet, 2f);
         }
     }
+    private void Block(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            isBlocking = true;
+            blockTimer = 0f;
+        }
+    }
     public void TakeDamage(int damageAmount)
     {
-        currentHealth -= damageAmount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-
-        if (currentHealth <= 0)
+        if (!isBlocking)
         {
-            Die();
+
+            currentHealth -= damageAmount;
+            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+
         }
     }
     void Die()

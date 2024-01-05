@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class GameManager : MonoBehaviour
     public EnemySpawner[] spawners;
     private int totalSpawnedEnemies = 0;
     [SerializeField] private int totalSpawnLimit = 100;
-    
+
 
 
     private void Awake()
@@ -24,8 +25,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-    }
 
+        KillComboObj.SetActive(false);
+    }
+   
     public void IncrementTotalSpawnedEnemies()
     {
         totalSpawnedEnemies++;
@@ -44,22 +47,72 @@ public class GameManager : MonoBehaviour
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                       //KILL COUNTER//
+    //  UI  //
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     private int killCount = 0;
     public TextMeshProUGUI killCounterText;
-    
+
     public void IncrementKillCount()
     {
         killCount++;
-        UpdateKillCounterText();
+        KillComboText();
+        killCounterText.text = killCount.ToString(); ;
+
+        if (killCount % 10 == 0 && killCount > 0)
+        {
+            SpawnRateMultiplier();
+        }
+
     }
 
-    private void UpdateKillCounterText()
+    private void SpawnRateMultiplier()
     {
-        if (killCounterText != null)
+        foreach (EnemySpawner spawner in spawners)
         {
-            killCounterText.text = killCount.ToString();
+            spawner.AdjustSpawnInterval();
         }
     }
+
+//KillCombo
+    private int killCombo = 0;
+    [SerializeField] private float comboDuration;
+    private float comboTimer;
+    public GameObject KillComboObj;
+    public TextMeshProUGUI killComboText;
+    public Slider ComboSlider;
+
+     private void Start()
+    {
+        comboTimer = comboDuration;
+    }
+    private void Update()
+    {
+        KillComboSlider();
+    }
+
+    private void KillComboText()
+    {
+        if(!KillComboObj.activeSelf)
+        {
+            KillComboObj.SetActive(true);
+        }
+        
+        killCombo++;
+        comboTimer= comboDuration;
+        killComboText.text = "x"+killCombo.ToString();
+    }
+
+    private void KillComboSlider()
+    {
+        comboTimer -= Time.deltaTime;
+        ComboSlider.value = Math.Max(0, comboTimer/comboDuration);
+
+        if(ComboSlider.value<=0)
+        {
+            killCombo=0;
+            KillComboObj.SetActive(false);
+        }
+     
+    }
+
 }

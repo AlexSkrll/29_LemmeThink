@@ -119,15 +119,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: TezaUpper_Frame_4
     originalName: 
-    pivot: {x: 0.84000003, y: -0.23376624}
+    pivot: {x: 0.19298248, y: -0.21666665}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 93
-      width: 50
-      height: 77
+      y: 4
+      width: 57
+      height: 60
     spriteID: f2af10c3708393d4d84ff25e385de7bb
     spriteBone: []
     spriteOutline: []
@@ -136,18 +136,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -4, y: 93}
+    uvTransform: {x: 4, y: 4}
   - name: TezaUpper_Frame_5
     originalName: 
-    pivot: {x: 0.5362319, y: -0.22222222}
+    pivot: {x: 0.20000003, y: -0.33333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 69
       y: 4
-      width: 69
-      height: 81
+      width: 55
+      height: 54
     spriteID: 0f5e22164926f794b8a466b4e75f1aff
     spriteBone: []
     spriteOutline: []
@@ -156,18 +156,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -9, y: 4}
+    uvTransform: {x: 69, y: 4}
   - name: TezaUpper_Frame_6
     originalName: 
-    pivot: {x: 0.7826087, y: -0.24324326}
+    pivot: {x: 0.23404258, y: -0.33333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 254
-      width: 46
-      height: 74
+      y: 134
+      width: 47
+      height: 54
     spriteID: f8f3e68fd073438449d01f3e0bbee4cf
     spriteBone: []
     spriteOutline: []
@@ -176,18 +176,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -10, y: 254}
+    uvTransform: {x: 4, y: 134}
   - name: TezaUpper_Frame_7
     originalName: 
-    pivot: {x: 0.7567568, y: -0.27272728}
+    pivot: {x: 0.4, y: -0.33333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 336
-      width: 37
-      height: 66
+      y: 72
+      width: 60
+      height: 54
     spriteID: 44d76622181920044a0cdf85a8040848
     spriteBone: []
     spriteOutline: []
@@ -196,18 +196,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -18, y: 336}
+    uvTransform: {x: 4, y: 72}
   - name: TezaUpper_Frame_8
     originalName: 
-    pivot: {x: 0.8039216, y: -0.2647059}
+    pivot: {x: -0.090909004, y: -0.6875}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 178
-      width: 51
-      height: 68
+      y: 196
+      width: 22
+      height: 32
     spriteID: 6f334724c1715b44b8c708678fb39a84
     spriteBone: []
     spriteOutline: []
@@ -216,18 +216,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -5, y: 178}
+    uvTransform: {x: 4, y: 196}
   - name: TezaUpper_Frame_9
     originalName: 
-    pivot: {x: 0.6428571, y: -0.6470588}
+    pivot: {x: 0.9142857, y: -2.235294}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 216
-      y: 4
-      width: 42
-      height: 34
+      x: 72
+      y: 72
+      width: 35
+      height: 17
     spriteID: ececcfa8499fe134aa177da98a3bc1c9
     spriteBone: []
     spriteOutline: []
@@ -236,18 +236,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 216, y: 4}
+    uvTransform: {x: 72, y: 72}
   - name: TezaUpper_Frame_10
     originalName: 
-    pivot: {x: 0.7297297, y: -0.4615385}
+    pivot: {x: 0.45000002, y: -2.1304348}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 121
-      y: 50
-      width: 37
-      height: 39
+      x: 72
+      y: 97
+      width: 20
+      height: 23
     spriteID: 1602eb13cfc4b6a4c99326c04eb81b33
     spriteBone: []
     spriteOutline: []
@@ -256,18 +256,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 121, y: 50}
+    uvTransform: {x: 72, y: 97}
   - name: TezaUpper_Frame_11
     originalName: 
-    pivot: {x: 0.7368421, y: -0.47368422}
+    pivot: {x: 0.41176465, y: -0.5882353}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 464
-      width: 38
-      height: 38
+      x: 34
+      y: 196
+      width: 17
+      height: 34
     spriteID: 9e83dec9b2b89524396ec90edcc4cad9
     spriteBone: []
     spriteOutline: []
@@ -276,847 +276,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 464}
-  - name: TezaUpper_Frame_16
-    originalName: 
-    pivot: {x: 0.72222215, y: -0.45945948}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 141
-      width: 36
-      height: 37
-    spriteID: 7b4fa027fa5cbbe46b1c2ce8918cfe35
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 141}
-  - name: TezaUpper_Frame_17
-    originalName: 
-    pivot: {x: 0.63414633, y: -0.6}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 4
-      width: 41
-      height: 35
-    spriteID: e7c9e77c29ad5b44099d7fb421d9a2ed
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 4}
-  - name: TezaUpper_Frame_18
-    originalName: 
-    pivot: {x: 0.72222215, y: -0.4615385}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 453
-      width: 36
-      height: 39
-    spriteID: 602ec25149ea06447b702b8fbd7c5fdf
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 453}
-  - name: TezaUpper_Frame_19
-    originalName: 
-    pivot: {x: 0.7297297, y: -0.43589747}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 97
-      width: 37
-      height: 39
-    spriteID: ba31ed8c474f82a4386af63fd2f6f1f3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 97}
-  - name: TezaUpper_Frame_20
-    originalName: 
-    pivot: {x: 0.25000003, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 238
-      width: 32
-      height: 45
-    spriteID: 099957315a4abd643aaf4ef9b1b3ca4e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 238}
-  - name: TezaUpper_Frame_21
-    originalName: 
-    pivot: {x: 0.744186, y: -0.39130434}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 410
-      width: 43
-      height: 46
-    spriteID: 9496b41ccc6b93a4b9511113990fb567
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 410}
-  - name: TezaUpper_Frame_22
-    originalName: 
-    pivot: {x: 0.4545454, y: -0.33333334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 49
-      y: 336
-      width: 22
-      height: 54
-    spriteID: 4a92a7052b0e4284189bbb510048388d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 49, y: 336}
-  - name: TezaUpper_Frame_23
-    originalName: 
-    pivot: {x: 0.45000002, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 266
-      y: 55
-      width: 20
-      height: 45
-    spriteID: ce0ccb7700a9ff3428281058ac80eb55
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 266, y: 55}
-  - name: TezaUpper_Frame_28
-    originalName: 
-    pivot: {x: 0.27027026, y: -0.5}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 186
-      width: 37
-      height: 36
-    spriteID: c136b7e0742e73c4f9e36041ebb1e267
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 186}
-  - name: TezaUpper_Frame_29
-    originalName: 
-    pivot: {x: 0.35714287, y: -0.6470588}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 46
-      width: 42
-      height: 34
-    spriteID: e0eb21614ec6de44e877b9339326419a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 46}
-  - name: TezaUpper_Frame_30
-    originalName: 
-    pivot: {x: 0.27027026, y: -0.4615385}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 144
-      width: 37
-      height: 39
-    spriteID: 186f97df89aad6345aa580d1ff192971
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 144}
-  - name: TezaUpper_Frame_31
-    originalName: 
-    pivot: {x: 0.26315787, y: -0.47368422}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 4
-      width: 38
-      height: 38
-    spriteID: 7c45bc9b036a5f8428b2351d4eb034a5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 4}
-  - name: TezaUpper_Frame_32
-    originalName: 
-    pivot: {x: 0.27777776, y: -0.45945948}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 230
-      width: 36
-      height: 37
-    spriteID: 8cb53ffed51ea8f4bb46badb934d73d6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 230}
-  - name: TezaUpper_Frame_33
-    originalName: 
-    pivot: {x: 0.36585367, y: -0.6}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 47
-      width: 41
-      height: 35
-    spriteID: cfb522b6c6a58f74891770c02c7018e0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 47}
-  - name: TezaUpper_Frame_34
-    originalName: 
-    pivot: {x: 0.27777776, y: -0.4615385}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 90
-      width: 36
-      height: 39
-    spriteID: dd7f21537f5629746b58d64a1c2b5056
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 90}
-  - name: TezaUpper_Frame_35
-    originalName: 
-    pivot: {x: 0.27027026, y: -0.43589747}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 191
-      width: 37
-      height: 39
-    spriteID: fb7257bd303c4fd4bb35691b86339487
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 191}
-  - name: TezaUpper_Frame_40
-    originalName: 
-    pivot: {x: 0.6, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 350
-      width: 30
-      height: 45
-    spriteID: d6da74fb8312bf74fa2cfa1d11693c60
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 350}
-  - name: TezaUpper_Frame_41
-    originalName: 
-    pivot: {x: 0.61290324, y: -0.39130434}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 344
-      width: 31
-      height: 46
-    spriteID: 1a85788fb686ba146a90674871f7c44e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 344}
-  - name: TezaUpper_Frame_42
-    originalName: 
-    pivot: {x: 0.62499994, y: -0.39130434}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 4
-      width: 32
-      height: 46
-    spriteID: 49031d13d944c994c8753671b140a7ce
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 4}
-  - name: TezaUpper_Frame_43
-    originalName: 
-    pivot: {x: 0.61290324, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 137
-      width: 31
-      height: 45
-    spriteID: 3f76f3c5be97cc54fa8feb63548ad85b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 137}
-  - name: TezaUpper_Frame_44
-    originalName: 
-    pivot: {x: 0.6, y: -0.38297874}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 398
-      width: 30
-      height: 47
-    spriteID: 9d4a94b4961269f4ea61985b11cdded4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 398}
-  - name: TezaUpper_Frame_45
-    originalName: 
-    pivot: {x: 0.6, y: -0.46666667}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 403
-      width: 30
-      height: 45
-    spriteID: 46511f12da5318a49b8d2c2118f225c3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 403}
-  - name: TezaUpper_Frame_46
-    originalName: 
-    pivot: {x: 0.6, y: -0.57142854}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 420
-      width: 30
-      height: 42
-    spriteID: 1301ad6240654ce4eb2d312cf4df3083
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 420}
-  - name: TezaUpper_Frame_47
-    originalName: 
-    pivot: {x: 0.58620685, y: -0.44444448}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 431
-      width: 29
-      height: 45
-    spriteID: 09d6d9f4a89473441afdf2ae253621ce
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 431}
-  - name: TezaUpper_Frame_32
-    originalName: 
-    pivot: {x: 0.58620685, y: -0.38297874}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 295
-      width: 29
-      height: 47
-    spriteID: 11379ae8e0d6b07469fcaad7cbf1ed10
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 295}
-  - name: TezaUpper_Frame_33
-    originalName: 
-    pivot: {x: 0.58620685, y: -0.46666667}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 58
-      width: 29
-      height: 45
-    spriteID: 1c58c29ad219ccc448afb176f78664d5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 58}
-  - name: TezaUpper_Frame_34
-    originalName: 
-    pivot: {x: 0.61290324, y: -0.57142854}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 217
-      width: 31
-      height: 42
-    spriteID: 889ad1c4ad0348a4abe73491fab54a45
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 217}
-  - name: TezaUpper_Frame_35
-    originalName: 
-    pivot: {x: 0.6, y: -0.44444448}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 456
-      width: 30
-      height: 45
-    spriteID: 0816fe49db7f52c4f86129bb467c1c97
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 456}
-  - name: TezaUpper_Frame_36
-    originalName: 
-    pivot: {x: 0.4, y: -0.40909094}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 275
-      width: 30
-      height: 44
-    spriteID: 9ff57a62e6f215c4ba4a062b573a416e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 275}
-  - name: TezaUpper_Frame_37
-    originalName: 
-    pivot: {x: 0.3870968, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 190
-      width: 31
-      height: 45
-    spriteID: 6d05e850c81e5c64db611cdb08d19a47
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 190}
-  - name: TezaUpper_Frame_38
-    originalName: 
-    pivot: {x: 0.375, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 121
-      y: 291
-      width: 32
-      height: 45
-    spriteID: f8f183e87e6cdea4da03656db3bcc8da
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 121, y: 291}
-  - name: TezaUpper_Frame_39
-    originalName: 
-    pivot: {x: 0.3870968, y: -0.40909094}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 167
-      y: 243
-      width: 31
-      height: 44
-    spriteID: 6ad6f9d41c58a50448b60917a4004f54
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 167, y: 243}
-  - name: TezaUpper_Frame_40
-    originalName: 
-    pivot: {x: 0.4, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 88
-      width: 30
-      height: 45
-    spriteID: 8c3eeeffc89a1734da8b6dcccd4fc4e5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 88}
-  - name: TezaUpper_Frame_41
-    originalName: 
-    pivot: {x: 0.4, y: -0.47727272}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 327
-      width: 30
-      height: 44
-    spriteID: e685fd82f0388444ca9d2f22a10913e6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 327}
-  - name: TezaUpper_Frame_42
-    originalName: 
-    pivot: {x: 0.4, y: -0.58536583}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 303
-      y: 4
-      width: 30
-      height: 41
-    spriteID: c220e65a8267c374781db319a75e499f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 303, y: 4}
-  - name: TezaUpper_Frame_43
-    originalName: 
-    pivot: {x: 0.41379312, y: -0.46511626}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 266
-      y: 4
-      width: 29
-      height: 43
-    spriteID: 415986f07cb7fe34ca25f6591e7b1135
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 266, y: 4}
-  - name: TezaUpper_Frame_44
-    originalName: 
-    pivot: {x: 0.41379312, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 111
-      width: 29
-      height: 45
-    spriteID: 90e98986bb28660448c8005735474285
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 111}
-  - name: TezaUpper_Frame_45
-    originalName: 
-    pivot: {x: 0.41379312, y: -0.47727272}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 267
-      width: 29
-      height: 44
-    spriteID: aec7f6f9141eb0245bdbb0478d6ec97b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 267}
-  - name: TezaUpper_Frame_46
-    originalName: 
-    pivot: {x: 0.3870968, y: -0.58536583}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 371
-      width: 31
-      height: 41
-    spriteID: ea9091145555d134d9bdb0fb09c2cb18
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 371}
-  - name: TezaUpper_Frame_47
-    originalName: 
-    pivot: {x: 0.4, y: -0.45454547}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 216
-      y: 379
-      width: 30
-      height: 44
-    spriteID: 8459fc6215b0a97448734076865736f5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 216, y: 379}
-  - name: TezaUpper_Frame_48
-    originalName: 
-    pivot: {x: 0.6206897, y: -0.40000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 164
-      width: 29
-      height: 45
-    spriteID: 7752e24803cf6cd44889bddec60f6b24
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 164}
-  - name: TezaUpper_Frame_49
-    originalName: 
-    pivot: {x: 0.3793104, y: -0.40909094}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 81
-      y: 319
-      width: 29
-      height: 44
-    spriteID: c2601152790912e49ae08e0ace528edc
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 81, y: 319}
+    uvTransform: {x: 34, y: 196}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -1129,403 +289,67 @@ ScriptedImporter:
     - name: TezaUpper_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 18
-        width: 64
-        height: 82
+        x: 39
+        y: 13
+        width: 57
+        height: 60
       spriteId: f2af10c3708393d4d84ff25e385de7bb
     - name: TezaUpper_Frame_1
       frameIndex: 1
       cellRect:
-        x: 0
+        x: 39
         y: 18
-        width: 82
-        height: 82
+        width: 55
+        height: 54
       spriteId: 0f5e22164926f794b8a466b4e75f1aff
     - name: TezaUpper_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
+        x: 39
         y: 18
-        width: 64
-        height: 82
+        width: 47
+        height: 54
       spriteId: f8f3e68fd073438449d01f3e0bbee4cf
     - name: TezaUpper_Frame_3
       frameIndex: 3
       cellRect:
-        x: 0
+        x: 26
         y: 18
-        width: 64
-        height: 82
+        width: 60
+        height: 54
       spriteId: 44d76622181920044a0cdf85a8040848
-    - name: TezaUpper_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 0
-        y: 18
-        width: 64
-        height: 82
-      spriteId: 6f334724c1715b44b8c708678fb39a84
-    - name: TezaUpper_Frame_5
-      frameIndex: 5
-      cellRect:
-        x: 23
-        y: 22
-        width: 42
-        height: 34
-      spriteId: ececcfa8499fe134aa177da98a3bc1c9
-    - name: TezaUpper_Frame_6
-      frameIndex: 6
-      cellRect:
-        x: 23
-        y: 18
-        width: 37
-        height: 39
-      spriteId: 1602eb13cfc4b6a4c99326c04eb81b33
-    - name: TezaUpper_Frame_7
-      frameIndex: 7
-      cellRect:
-        x: 22
-        y: 18
-        width: 38
-        height: 38
-      spriteId: 9e83dec9b2b89524396ec90edcc4cad9
-    - name: TezaUpper_Frame_8
-      frameIndex: 8
-      cellRect:
-        x: 24
-        y: 17
-        width: 36
-        height: 37
-      spriteId: 7b4fa027fa5cbbe46b1c2ce8918cfe35
-    - name: TezaUpper_Frame_9
-      frameIndex: 9
-      cellRect:
-        x: 24
-        y: 21
-        width: 41
-        height: 35
-      spriteId: e7c9e77c29ad5b44099d7fb421d9a2ed
-    - name: TezaUpper_Frame_10
-      frameIndex: 10
-      cellRect:
-        x: 24
-        y: 18
-        width: 36
-        height: 39
-      spriteId: 602ec25149ea06447b702b8fbd7c5fdf
-    - name: TezaUpper_Frame_11
-      frameIndex: 11
-      cellRect:
-        x: 23
-        y: 17
-        width: 37
-        height: 39
-      spriteId: ba31ed8c474f82a4386af63fd2f6f1f3
     - name: TezaUpper_Frame_12
       frameIndex: 12
       cellRect:
-        x: 42
-        y: 18
-        width: 32
-        height: 45
-      spriteId: 099957315a4abd643aaf4ef9b1b3ca4e
+        x: 52
+        y: 22
+        width: 22
+        height: 32
+      spriteId: 6f334724c1715b44b8c708678fb39a84
     - name: TezaUpper_Frame_13
       frameIndex: 13
       cellRect:
         x: 18
-        y: 18
-        width: 43
-        height: 46
-      spriteId: 9496b41ccc6b93a4b9511113990fb567
+        y: 38
+        width: 35
+        height: 17
+      spriteId: ececcfa8499fe134aa177da98a3bc1c9
     - name: TezaUpper_Frame_14
       frameIndex: 14
       cellRect:
-        x: 40
-        y: 18
-        width: 22
-        height: 54
-      spriteId: 4a92a7052b0e4284189bbb510048388d
+        x: 41
+        y: 49
+        width: 20
+        height: 23
+      spriteId: 1602eb13cfc4b6a4c99326c04eb81b33
     - name: TezaUpper_Frame_15
       frameIndex: 15
       cellRect:
-        x: 41
-        y: 18
-        width: 20
-        height: 45
-      spriteId: ce0ccb7700a9ff3428281058ac80eb55
-    - name: TezaUpper_Frame_16
-      frameIndex: 16
-      cellRect:
-        x: 40
-        y: 18
-        width: 37
-        height: 36
-      spriteId: c136b7e0742e73c4f9e36041ebb1e267
-    - name: TezaUpper_Frame_17
-      frameIndex: 17
-      cellRect:
-        x: 35
-        y: 22
-        width: 42
+        x: 43
+        y: 20
+        width: 17
         height: 34
-      spriteId: e0eb21614ec6de44e877b9339326419a
-    - name: TezaUpper_Frame_18
-      frameIndex: 18
-      cellRect:
-        x: 40
-        y: 18
-        width: 37
-        height: 39
-      spriteId: 186f97df89aad6345aa580d1ff192971
-    - name: TezaUpper_Frame_19
-      frameIndex: 19
-      cellRect:
-        x: 40
-        y: 18
-        width: 38
-        height: 38
-      spriteId: 7c45bc9b036a5f8428b2351d4eb034a5
-    - name: TezaUpper_Frame_20
-      frameIndex: 20
-      cellRect:
-        x: 40
-        y: 17
-        width: 36
-        height: 37
-      spriteId: 8cb53ffed51ea8f4bb46badb934d73d6
-    - name: TezaUpper_Frame_21
-      frameIndex: 21
-      cellRect:
-        x: 35
-        y: 21
-        width: 41
-        height: 35
-      spriteId: cfb522b6c6a58f74891770c02c7018e0
-    - name: TezaUpper_Frame_22
-      frameIndex: 22
-      cellRect:
-        x: 40
-        y: 18
-        width: 36
-        height: 39
-      spriteId: dd7f21537f5629746b58d64a1c2b5056
-    - name: TezaUpper_Frame_23
-      frameIndex: 23
-      cellRect:
-        x: 40
-        y: 17
-        width: 37
-        height: 39
-      spriteId: fb7257bd303c4fd4bb35691b86339487
-    - name: TezaUpper_Frame_24
-      frameIndex: 24
-      cellRect:
-        x: 32
-        y: 18
-        width: 30
-        height: 45
-      spriteId: d6da74fb8312bf74fa2cfa1d11693c60
-    - name: TezaUpper_Frame_25
-      frameIndex: 25
-      cellRect:
-        x: 31
-        y: 18
-        width: 31
-        height: 46
-      spriteId: 1a85788fb686ba146a90674871f7c44e
-    - name: TezaUpper_Frame_26
-      frameIndex: 26
-      cellRect:
-        x: 30
-        y: 18
-        width: 32
-        height: 46
-      spriteId: 49031d13d944c994c8753671b140a7ce
-    - name: TezaUpper_Frame_27
-      frameIndex: 27
-      cellRect:
-        x: 31
-        y: 18
-        width: 31
-        height: 45
-      spriteId: 3f76f3c5be97cc54fa8feb63548ad85b
-    - name: TezaUpper_Frame_28
-      frameIndex: 28
-      cellRect:
-        x: 32
-        y: 18
-        width: 30
-        height: 47
-      spriteId: 9d4a94b4961269f4ea61985b11cdded4
-    - name: TezaUpper_Frame_29
-      frameIndex: 29
-      cellRect:
-        x: 32
-        y: 21
-        width: 30
-        height: 45
-      spriteId: 46511f12da5318a49b8d2c2118f225c3
-    - name: TezaUpper_Frame_30
-      frameIndex: 30
-      cellRect:
-        x: 32
-        y: 24
-        width: 30
-        height: 42
-      spriteId: 1301ad6240654ce4eb2d312cf4df3083
-    - name: TezaUpper_Frame_31
-      frameIndex: 31
-      cellRect:
-        x: 33
-        y: 20
-        width: 29
-        height: 45
-      spriteId: 09d6d9f4a89473441afdf2ae253621ce
-    - name: TezaUpper_Frame_32
-      frameIndex: 32
-      cellRect:
-        x: 33
-        y: 18
-        width: 29
-        height: 47
-      spriteId: 11379ae8e0d6b07469fcaad7cbf1ed10
-    - name: TezaUpper_Frame_33
-      frameIndex: 33
-      cellRect:
-        x: 33
-        y: 21
-        width: 29
-        height: 45
-      spriteId: 1c58c29ad219ccc448afb176f78664d5
-    - name: TezaUpper_Frame_34
-      frameIndex: 34
-      cellRect:
-        x: 31
-        y: 24
-        width: 31
-        height: 42
-      spriteId: 889ad1c4ad0348a4abe73491fab54a45
-    - name: TezaUpper_Frame_35
-      frameIndex: 35
-      cellRect:
-        x: 32
-        y: 20
-        width: 30
-        height: 45
-      spriteId: 0816fe49db7f52c4f86129bb467c1c97
-    - name: TezaUpper_Frame_36
-      frameIndex: 36
-      cellRect:
-        x: 38
-        y: 18
-        width: 30
-        height: 44
-      spriteId: 9ff57a62e6f215c4ba4a062b573a416e
-    - name: TezaUpper_Frame_37
-      frameIndex: 37
-      cellRect:
-        x: 38
-        y: 18
-        width: 31
-        height: 45
-      spriteId: 6d05e850c81e5c64db611cdb08d19a47
-    - name: TezaUpper_Frame_38
-      frameIndex: 38
-      cellRect:
-        x: 38
-        y: 18
-        width: 32
-        height: 45
-      spriteId: f8f183e87e6cdea4da03656db3bcc8da
-    - name: TezaUpper_Frame_39
-      frameIndex: 39
-      cellRect:
-        x: 38
-        y: 18
-        width: 31
-        height: 44
-      spriteId: 6ad6f9d41c58a50448b60917a4004f54
-    - name: TezaUpper_Frame_40
-      frameIndex: 40
-      cellRect:
-        x: 38
-        y: 18
-        width: 30
-        height: 45
-      spriteId: 8c3eeeffc89a1734da8b6dcccd4fc4e5
-    - name: TezaUpper_Frame_41
-      frameIndex: 41
-      cellRect:
-        x: 38
-        y: 21
-        width: 30
-        height: 44
-      spriteId: e685fd82f0388444ca9d2f22a10913e6
-    - name: TezaUpper_Frame_42
-      frameIndex: 42
-      cellRect:
-        x: 38
-        y: 24
-        width: 30
-        height: 41
-      spriteId: c220e65a8267c374781db319a75e499f
-    - name: TezaUpper_Frame_43
-      frameIndex: 43
-      cellRect:
-        x: 38
-        y: 20
-        width: 29
-        height: 43
-      spriteId: 415986f07cb7fe34ca25f6591e7b1135
-    - name: TezaUpper_Frame_44
-      frameIndex: 44
-      cellRect:
-        x: 38
-        y: 18
-        width: 29
-        height: 45
-      spriteId: 90e98986bb28660448c8005735474285
-    - name: TezaUpper_Frame_45
-      frameIndex: 45
-      cellRect:
-        x: 38
-        y: 21
-        width: 29
-        height: 44
-      spriteId: aec7f6f9141eb0245bdbb0478d6ec97b
-    - name: TezaUpper_Frame_46
-      frameIndex: 46
-      cellRect:
-        x: 38
-        y: 24
-        width: 31
-        height: 41
-      spriteId: ea9091145555d134d9bdb0fb09c2cb18
-    - name: TezaUpper_Frame_47
-      frameIndex: 47
-      cellRect:
-        x: 38
-        y: 20
-        width: 30
-        height: 44
-      spriteId: 8459fc6215b0a97448734076865736f5
-    - name: TezaUpper_Frame_48
-      frameIndex: 48
-      cellRect:
-        x: 32
-        y: 18
-        width: 29
-        height: 45
-      spriteId: 7752e24803cf6cd44889bddec60f6b24
-    - name: TezaUpper_Frame_49
-      frameIndex: 49
-      cellRect:
-        x: 39
-        y: 18
-        width: 29
-        height: 44
-      spriteId: c2601152790912e49ae08e0ace528edc
+      spriteId: 9e83dec9b2b89524396ec90edcc4cad9
     linkedCells: []
     parentIndex: -1
   platformSettings: []

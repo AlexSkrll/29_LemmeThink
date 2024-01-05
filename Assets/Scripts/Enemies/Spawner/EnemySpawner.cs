@@ -6,10 +6,16 @@ public class EnemySpawner : MonoBehaviour
     private bool isSpawning = true;
     [SerializeField] private Vector2 spawnAreaSize;
     [SerializeField] private float spawnInterval;
+    [SerializeField] private float maxSpawnInterval;
     [SerializeField] private int maxActiveEnemies;
+    [SerializeField] private float intervalMultiplier;
     private int currentActiveEnemies = 0;
 
     void Start()
+    {
+        StartSpawning();
+    }
+    void StartSpawning()
     {
         InvokeRepeating("SpawnEnemy", Random.Range(1f, spawnInterval), spawnInterval);
     }
@@ -23,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
                                             transform.position.y + Random.Range(-spawnAreaSize.y / 2f, spawnAreaSize.y / 2f));
 
             GameObject enemy = Instantiate(enemyPrefab, randomPos, Quaternion.identity, transform);
-            
+
             GameManager.instance.IncrementTotalSpawnedEnemies();
             currentActiveEnemies++;
         }
@@ -32,6 +38,17 @@ public class EnemySpawner : MonoBehaviour
     public void EnemyDestroyed()
     {
         currentActiveEnemies--;
+    }
+    public void AdjustSpawnInterval()
+    {
+        Debug.Log("adjusted spawn interval");
+        if (spawnInterval >= maxSpawnInterval)
+        {
+            spawnInterval *= intervalMultiplier;
+            CancelInvoke("SpawnEnemy");
+            StartSpawning();
+            Debug.Log(spawnInterval);
+        }
     }
 
     public void StopSpawners()

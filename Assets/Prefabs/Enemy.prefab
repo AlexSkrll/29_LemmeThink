@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e303d7cbba25445b0f38d6a83a1f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 3222390484295976335, guid: 74779b9b180eaea4481ee9a0359ee294, type: 3}
+  spawner: {fileID: 0}
   speed: 100
   attackDistance: 40
   attackPoint: {fileID: 409322715282219440}
@@ -151,7 +151,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
