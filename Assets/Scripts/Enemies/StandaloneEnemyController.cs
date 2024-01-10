@@ -79,4 +79,8 @@ public class StandaloneEnemyController : MonoBehaviour , IEnemy
         GameManager.instance.IncrementKillCount();
         Destroy(gameObject);
     }
+    //public void Disable()
+    //{
+    //    gameObject.SetActive(false);
+    //}
 }

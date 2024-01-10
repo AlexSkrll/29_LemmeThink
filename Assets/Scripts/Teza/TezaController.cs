@@ -20,7 +20,6 @@ public class TezaController : MonoBehaviour
     private InputAction look;
     private InputAction block;
 
-
     //movement
     private Vector2 movementInput;
     private Vector2 lastMoveDirection;
@@ -28,66 +27,10 @@ public class TezaController : MonoBehaviour
     [SerializeField] private float speed;
     private float timeSinceLastMovement;
 
-
-    //dash
-    private bool isDashing;
-    private float dashTimer;
-    private bool dashExhausted = false;
-    [SerializeField] private float dashSpeed;
-    [SerializeField] private float dashDuration;
-    private float dashCounter;
-    private float dashCooldownTimer;
-    [SerializeField] private int maxDashes;
-    [SerializeField] private float dashCooldownDuration;
-    private float timeSinceLastDash;
-    [SerializeField] private float DashCounterResetTime;
-
-
     //UI
     public Slider DashSlider;
     public Slider AttackSlider;
-
-    //Attack
-    public Transform attackPoint;
-    public float attackRange;
-    [SerializeField] private float attackOffset;
     public LayerMask enemyLayer;
-    //AttackCounter
-    [SerializeField] int maxAttacks;
-    private float attackCounter;
-    private bool attackExhausted = false;
-    private float attackCooldownTimer;
-    [SerializeField] float attackCooldownDuration;
-    private float timeSinceLastAttack;
-    [SerializeField] private float attackCounterResetTime;
-
-
-    //health
-    private int maxHealth = 1;
-    private int currentHealth;
-
-
-    //aiming
-    [SerializeField] private GameObject crosshair;
-    [SerializeField] private GameObject gunarm;
-    private bool isAiming = false;
-    private Vector2 lookInput;
-    private Vector2 crosshairPos;
-    private Vector2 characterPos;
-
-    private float aimAngle;
-
-
-    //shooting
-    public GameObject bulletPrefab;
-    [SerializeField] private float bulletSpeed;
-
-    //block
-    private bool isBlocking;
-    private float blockDuration = 4;
-    private float blockTimer;
-    
-
 
     private void Awake()
     {
@@ -205,6 +148,20 @@ public class TezaController : MonoBehaviour
         }
 
     }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //dash
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    private bool isDashing;
+    private float dashTimer;
+    private bool dashExhausted = false;
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashDuration;
+    private float dashCounter;
+    private float dashCooldownTimer;
+    [SerializeField] private int maxDashes;
+    [SerializeField] private float dashCooldownDuration;
+    private float timeSinceLastDash;
+    [SerializeField] private float DashCounterResetTime;
 
     private void Dash(InputAction.CallbackContext context)
     {
@@ -259,7 +216,20 @@ public class TezaController : MonoBehaviour
         DashSlider.value = (maxDashes - dashCounter) / maxDashes;
     }
 
-
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Attack
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public Transform attackPoint;
+    public float attackRange;
+    [SerializeField] private float attackOffset;
+    //AttackCounter
+    [SerializeField] int maxAttacks;
+    private float attackCounter;
+    private bool attackExhausted = false;
+    private float attackCooldownTimer;
+    [SerializeField] float attackCooldownDuration;
+    private float timeSinceLastAttack;
+    [SerializeField] private float attackCounterResetTime;
     private void Attack(InputAction.CallbackContext context)
     {
 
@@ -280,7 +250,7 @@ public class TezaController : MonoBehaviour
                 if (enemyHealth != null)
                 {
                     enemyHealth.TakeDamage(1);
-                    break;
+                    break;// ama den bei break skotonei osous einai sto area!!
                 }
 
             }
@@ -351,6 +321,17 @@ public class TezaController : MonoBehaviour
         AttackSlider.value = (maxAttacks - attackCounter) / maxAttacks;
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///                                                        aiming
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    [SerializeField] private GameObject crosshair;
+    [SerializeField] private GameObject gunarm;
+    private bool isAiming = false;
+    private Vector2 lookInput;
+    private Vector2 crosshairPos;
+    private Vector2 characterPos;
+
+    private float aimAngle;
     private void Aim(InputAction.CallbackContext context)
     {
         isAiming = true;
@@ -400,6 +381,13 @@ public class TezaController : MonoBehaviour
         anim.SetFloat("aimAngle", angle);
     }
 
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //shooting
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public GameObject bulletPrefab;
+    [SerializeField] private float bulletSpeed;
     private void Fire(InputAction.CallbackContext context)
     {
         if (context.performed && isAiming)
@@ -417,14 +405,27 @@ public class TezaController : MonoBehaviour
             Destroy(bullet, 2f);
         }
     }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //block
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    private bool isBlocking;
+    private float blockDuration = 4;
+    private float blockTimer;
+
     private void Block(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             isBlocking = true;
             blockTimer = 0f;
+            Debug.Log("Blocking");
         }
     }
+
+    //health
+    private int maxHealth = 1;
+    private int currentHealth;
     public void TakeDamage(int damageAmount)
     {
         if (!isBlocking)
@@ -440,9 +441,12 @@ public class TezaController : MonoBehaviour
 
         }
     }
+    public GameObject Enemies;
+
     void Die()
     {
-        anim.SetTrigger("Death");
+        //anim.SetTrigger("Death");
+        GameManager.instance.ToggleDeathScreen();
     }
 
 }
