@@ -30,7 +30,7 @@ public class EnemySpawner : MonoBehaviour
 
             GameObject enemy = Instantiate(enemyPrefab, randomPos, Quaternion.identity, transform);
 
-            GameManager.instance.IncrementTotalSpawnedEnemies();
+            //GameManager.instance.IncrementTotalSpawnedEnemies();
             currentActiveEnemies++;
         }
     }

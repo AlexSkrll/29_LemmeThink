@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public EnemySpawner[] spawners;
-    private int totalSpawnedEnemies = 0;
-    [SerializeField] private int totalSpawnLimit = 100;
+    //private int totalSpawnedEnemies = 0;
+    //[SerializeField] private int totalSpawnLimit = 100;
 
 
 
@@ -29,25 +29,27 @@ public class GameManager : MonoBehaviour
 
         KillComboObj.SetActive(false);
     }
-    //enemyspawners
-    public void IncrementTotalSpawnedEnemies()
-    {
-        totalSpawnedEnemies++;
+    ////enemyspawners
+    //public void IncrementTotalSpawnedEnemies()
+    //{
+    //    totalSpawnedEnemies++;
+//
+    //    if (totalSpawnedEnemies >= totalSpawnLimit)           ///No time
+    //    {
+    //        Debug.Log("spawnLimitReached");
+    //        //StopAllSpawners();
+    //    }
+    //}
+    //public void StopAllSpawners()
+    //{
+    //    foreach (EnemySpawner spawner in spawners)
+    //    {
+    //        spawner.StopSpawners();
+    //    }
+    //}
 
-        if (totalSpawnedEnemies >= totalSpawnLimit)
-        {
-            Debug.Log("spawnLimitReached");
-            StopAllSpawners();
-        }
-    }
-    public void StopAllSpawners()
-    {
-        foreach (EnemySpawner spawner in spawners)
-        {
-            spawner.StopSpawners();
-        }
-    }
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //KillCounter  //
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     private int killCount = 0;

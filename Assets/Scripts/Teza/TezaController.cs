@@ -9,6 +9,7 @@ public class TezaController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    public Animator tezaArm;
 
     //input
     public TezaInput input;
@@ -78,6 +79,9 @@ public class TezaController : MonoBehaviour
         block = input.Player.Block;
         block.Enable();
         block.performed += Block;
+
+
+        timeSinceLastAttack = 0.1f;
     }
     private void OnDisable()
     {
@@ -230,16 +234,17 @@ public class TezaController : MonoBehaviour
     [SerializeField] float attackCooldownDuration;
     private float timeSinceLastAttack;
     [SerializeField] private float attackCounterResetTime;
+    private bool isAttacking;
     private void Attack(InputAction.CallbackContext context)
     {
 
         attackPointPosition();
 
-        if (context.performed && !attackExhausted)
+        if (context.performed && !attackExhausted && !isAiming)
         {
             //Debug.Log("Attack");
+            tezaArm.SetTrigger("Attacking");
             anim.SetTrigger("Attacking");
-
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
             foreach (Collider2D enemy in hitEnemies)
@@ -271,9 +276,10 @@ public class TezaController : MonoBehaviour
         Vector2 attackDirection = new Vector2(attackX, attackY).normalized;
         Vector2 attackPointPosition = (Vector2)transform.position + attackDirection * attackOffset;
         attackPoint.position = attackPointPosition;
+        attackPoint.position = new Vector2(attackPoint.position.x, attackPoint.position.y - 10f);
         if (attackY == 0)
         {
-            attackPoint.position = new Vector2(attackPoint.position.x, attackPoint.position.y - 10f);
+            attackPoint.position = new Vector2(attackPoint.position.x, attackPoint.position.y + 10f);
         }
     }
 
@@ -357,7 +363,7 @@ public class TezaController : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         gunarm.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         SpriteRenderer gunarmSprite = gunarm.GetComponent<SpriteRenderer>();
         if (angle > 90 || angle < -90)
