@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 public class TezaController : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class TezaController : MonoBehaviour
         Cursor.visible = false;
         crosshair.SetActive(false);
         gunarm.SetActive(false);
+        bulletCount = maxbulletCount;
 
     }
     private void OnEnable()
@@ -148,6 +150,7 @@ public class TezaController : MonoBehaviour
             if (blockTimer >= blockDuration)
             {
                 isBlocking = false;
+                shield.SetActive(false);
             }
         }
 
@@ -255,6 +258,7 @@ public class TezaController : MonoBehaviour
                 if (enemyHealth != null)
                 {
                     enemyHealth.TakeDamage(1);
+                    if(bulletCount< maxbulletCount) bulletCount++;
                     break;// ama den bei break skotonei osous einai sto area!!
                 }
 
@@ -263,6 +267,8 @@ public class TezaController : MonoBehaviour
             attackCounter++;
             timeSinceLastAttack = 0;
             if (attackCounter == maxAttacks) attackExhausted = true;
+
+            
         }
     }
     private void attackPointPosition()
@@ -325,6 +331,9 @@ public class TezaController : MonoBehaviour
             return;
         }
         AttackSlider.value = (maxAttacks - attackCounter) / maxAttacks;
+
+        //ammocounter 
+        AmmoText.text = "Ammo: " + bulletCount.ToString();
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -393,10 +402,13 @@ public class TezaController : MonoBehaviour
     //shooting
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public GameObject bulletPrefab;
+    private int bulletCount;
+    public int maxbulletCount;
+    public TextMeshProUGUI AmmoText;
     [SerializeField] private float bulletSpeed;
     private void Fire(InputAction.CallbackContext context)
     {
-        if (context.performed && isAiming)
+        if (context.performed && isAiming && bulletCount >= 1f)
         {
             Vector2 crosshairPos2D = new Vector2(crosshairPos.x, crosshairPos.y); //Den mporousa na kanw aferesh Vecto3 me Vector2*
             Vector2 direction = (crosshairPos2D - characterPos).normalized;
@@ -409,6 +421,7 @@ public class TezaController : MonoBehaviour
             bullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
             Destroy(bullet, 2f);
+            bulletCount--;
         }
     }
 
@@ -418,12 +431,14 @@ public class TezaController : MonoBehaviour
     private bool isBlocking;
     private float blockDuration = 4;
     private float blockTimer;
+    [SerializeField] private GameObject shield;
 
     private void Block(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             isBlocking = true;
+            shield.SetActive(true);
             blockTimer = 0f;
             Debug.Log("Blocking");
         }

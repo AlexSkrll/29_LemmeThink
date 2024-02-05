@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour, IEnemy
     public Transform attackPoint;
     [SerializeField] private float attackRange;
     [SerializeField] private float attackOffset;
+    private float timesincelastattack;
+    [SerializeField] private float attackDelay;
     public LayerMask playerLayer;
     void Awake()
     {
@@ -30,18 +32,24 @@ public class EnemyController : MonoBehaviour, IEnemy
         currentHealth = maxHealth;
     }
 
+    void Update()
+    {
+        timesincelastattack +=Time.deltaTime;
+    }
     void FixedUpdate()
     {
         Vector3 targetPosition = player.position;
         Vector3 direction = (targetPosition - transform.position).normalized;
         rb.velocity = direction * speed;
-        anim.SetTrigger("Running");
+        anim.SetFloat("moveX", direction.x);
+        anim.SetFloat("moveY", direction.y);
 
         if (Vector3.Distance(transform.position, targetPosition) <= attackDistance)
         {
             rb.velocity = Vector3.zero;
-            anim.SetTrigger("isAttacking");
+            if(timesincelastattack >= attackDelay)anim.SetTrigger("isAttacking");
         }
+
     }
     public void TakeDamage(int damageAmount)
     {
@@ -56,6 +64,7 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     private void Attack()
     {
+        attackPointPosition();
 
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
 
@@ -68,25 +77,17 @@ public class EnemyController : MonoBehaviour, IEnemy
             {
                 playerHealth.TakeDamage(1);
             }
-
+            timesincelastattack = 0;
         }
-
     }
     private void attackPointPosition()
     {
         float attackX = anim.GetFloat("moveX");
         float attackY = anim.GetFloat("moveY");
-        if (attackX != 0 && attackY != 0)
-        {
-            attackX = 0;
-        }
         Vector2 attackDirection = new Vector2(attackX, attackY).normalized;
         Vector2 attackPointPosition = (Vector2)transform.position + attackDirection * attackOffset;
         attackPoint.position = attackPointPosition;
-        if (attackY == 0)
-        {
-            attackPoint.position = new Vector2(attackPoint.position.x, attackPoint.position.y - 10f);
-        }
+        
     }
     void OnDrawGizmosSelected()
     {
