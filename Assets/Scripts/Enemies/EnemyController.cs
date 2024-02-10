@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour, IEnemy
 {
     private Rigidbody2D rb;
     private Animator anim;
+    public AudioManager audioManager;
     public EnemySpawner spawner;
     private Transform player;
     //movement
@@ -21,6 +22,7 @@ public class EnemyController : MonoBehaviour, IEnemy
     private float timesincelastattack;
     [SerializeField] private float attackDelay;
     public LayerMask playerLayer;
+    
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,6 +30,7 @@ public class EnemyController : MonoBehaviour, IEnemy
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
         spawner = transform.parent.GetComponent<EnemySpawner>();
+        audioManager = AudioManager.FindObjectOfType<AudioManager>();
 
         currentHealth = maxHealth;
     }
@@ -65,6 +68,7 @@ public class EnemyController : MonoBehaviour, IEnemy
     private void Attack()
     {
         attackPointPosition();
+        audioManager.AttackSFX();
 
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
 
@@ -97,6 +101,7 @@ public class EnemyController : MonoBehaviour, IEnemy
     public void Die()
     {
         spawner.EnemyDestroyed();
+        audioManager.EnemyDeathSFX();
         GameManager.instance.IncrementKillCount();
         Destroy(gameObject);
     }

@@ -11,6 +11,7 @@ public class TezaController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     public Animator tezaArm;
+    public AudioManager audioManager;
 
     //input
     public TezaInput input;
@@ -179,6 +180,7 @@ public class TezaController : MonoBehaviour
         {
             //Debug.Log("DashPerformed");
             isDashing = true;
+            audioManager.DashSFX();
             dashTimer = 0f;
             timeSinceLastDash = 0f;
             dashCounter++;
@@ -251,6 +253,7 @@ public class TezaController : MonoBehaviour
             //Debug.Log("Attack");
             tezaArm.SetTrigger("Attacking");
             anim.SetTrigger("Attacking");
+            audioManager.AttackSFX();
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
             foreach (Collider2D enemy in hitEnemies)
@@ -425,7 +428,9 @@ public class TezaController : MonoBehaviour
 
             Destroy(bullet, 2f);
             bulletCount--;
+            audioManager.ShootingSFX();
         }
+        if (context.performed && isAiming && bulletCount == 0f){audioManager.GunEmptySFX();}
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -443,6 +448,7 @@ public class TezaController : MonoBehaviour
         {
             isBlocking = true;
             shield.SetActive(true);
+            audioManager.ShieldSFX();
             blockTimer = 0f;
             //Debug.Log("Blocking");
         }
@@ -472,6 +478,8 @@ public class TezaController : MonoBehaviour
     {
         //anim.SetTrigger("Death");
         GameManager.instance.ToggleDeathScreen();
+        audioManager.DeathSFX();
+        audioManager.MusicQuietSFX();
     }
 
 }

@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e303d7cbba25445b0f38d6a83a1f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   spawner: {fileID: 0}
   speed: 100
   attackDistance: 40
