@@ -84,6 +84,7 @@ public class TezaController : MonoBehaviour
 
 
         timeSinceLastAttack = 0.1f;
+        timeSinceLastBlock = 5f;
     }
     private void OnDisable()
     {
@@ -111,6 +112,7 @@ public class TezaController : MonoBehaviour
         DashCounterManager();
         AttackCounterManager();
         timeSinceLastMovement += Time.fixedDeltaTime;
+        timeSinceLastBlock += Time.fixedDeltaTime;
         if (isAiming)
         {
             AimLogic();
@@ -151,6 +153,7 @@ public class TezaController : MonoBehaviour
             {
                 isBlocking = false;
                 shield.SetActive(false);
+                timeSinceLastBlock = 0;
             }
         }
 
@@ -431,16 +434,17 @@ public class TezaController : MonoBehaviour
     private bool isBlocking;
     private float blockDuration = 4;
     private float blockTimer;
+    private float timeSinceLastBlock;
     [SerializeField] private GameObject shield;
 
     private void Block(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && timeSinceLastBlock >5f)
         {
             isBlocking = true;
             shield.SetActive(true);
             blockTimer = 0f;
-            Debug.Log("Blocking");
+            //Debug.Log("Blocking");
         }
     }
 

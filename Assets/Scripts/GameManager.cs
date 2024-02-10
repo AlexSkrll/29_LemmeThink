@@ -164,6 +164,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // kaleite sto deathscreenbutton
     }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     //deathscreenUi
     [SerializeField] TextMeshProUGUI MaxComboText;
